@@ -6,31 +6,46 @@
             font-family: 'Montserrat', sans-serif;
             margin: 0;
             padding: 0;
-            Width:1728px;
+            width:1728px;
+            overflow-x: hidden;
+            box-sizing: border-box;
 Height:86px;
-        }
-                .navbar {
-            position: sticky;
-            top: 0;
-            background-color:#FCAF02;
-            color: #fff;
-            display: flex;
-            justify-content: space-between;
-            padding: 10px 20px;
-            z-index: 1000;
-        }
-        
-        .navbar .logo {
-            font-weight:500;
-            text-decoration:underline;
-            color: black;
-        }
-        
-        .navbar .nav-links a {
-            color: black;
-            margin: 0 10px;
-            display: inline;
-        }
+        }.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFA500;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    padding: 14px 16px;
+    display: block;
+}
+
+.nav-links a:hover {
+    background-color: #ddd;
+    color: black;
+}
         
         .intro {
             display: flex;
@@ -135,12 +150,12 @@ Line-height:78.02px;
             padding: 10px;
             margin: 10px;
             border-radius: 20px;
-            Width:219px;
-            Height:39px;
-            Top:1347px;
-            Left:738px;
-            Weight:700;
-            Size:32px;
+            width:219px;
+           height:39px;
+            top:1347px;
+            left:738px;
+            weight:700;
+            size:32px;
         display: block;
         margin: auto;
         }
@@ -152,12 +167,12 @@ Line-height:78.02px;
             border-color: #333;
         }
         input[type=number]{
-            Width:730px;
+            width:730px;
             border:2px;
             border-color:#FCAF02;
-            Top:1177px;
-            Left:63px;
-            Radius:100px;
+            top:1177px;
+            left:63px;
+            radius:100px;
         }
         input[type=name]{
             Width:767px;
@@ -165,30 +180,17 @@ Line-height:78.02px;
             Left:866px;
             Radius:100px;
             height: ;
-        }Width
-767px
-Height
-82px
-Top
-1177px
-Left
-866px
-Radius
-100px
+        }
         
         .table-section {
             padding: 50px;
             background-color: #000000;
             border-color: #FCAF02;
-            Width:1582px;
-            Height:755px;
-            Top:1524px;
-            Left:75px;
-            Border:2px;
-        }
-        
-        .table-section h2 {
-            margin-bottom: 20px;
+            width:1582px;
+            height:755px;
+            top:1524px;
+            left:75px;
+            border:2px;
         }
         
         table {
@@ -197,21 +199,44 @@ Radius
             border-color: #FCAF02;
             background-color: #000000;
             color: #FCAF02;
+            overflow-x: hidden;
+            width: 1582px;
+            height: 755px;
+            top: 1524px;
+            left: 75px;
+            border: 2px;
+            box-sizing: border-box;
         }
         .sno{
             text-align: center;
         }
+        .info{
+            width: 1577px;
+            height: 90px;
+            top: 1524px;
+            left: 75px;
+            box-sizing: border-box;
+        }
         
         table th, table td {
-            border: 1px solid #ccc;
+            border: 1px solid #FCAF02;
             padding: 10px;
             text-align: left;
+            top: 1524px;
+            left: 75px;
+            box-sizing: border-box;
+            
         }
         
         table tfoot {
             font-weight: bold;
             background-color: #FCAF02;
-            color:#000000
+            color:#000000;
+            width: 1582px;
+            height: 91px;
+            top: 2188px;
+            left: 75px;
+            box-sizing: border-box;
         }
     </style>
     <meta charset="UTF-8">
@@ -251,7 +276,7 @@ Radius
     </section>
     <section id="table" class="table-section">
         <table>
-            <thead>
+            <thead class="info">
                 <tr>
                     <th class="sno">SNO.</th>
                     <th>Startup Name</th>
